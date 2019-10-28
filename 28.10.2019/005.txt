@@ -1,0 +1,27 @@
+1. ШАПКА САЙТА
+   1.1 Логотип и название сайта (Electromo)
+   1.2 Строка поиска
+   1.3 Главное меню
+    *Home
+    *Wish list
+    *My account
+    *Log in
+    *Checkout
+   1.4 Второстепенное меню (Categories)
+    *TV&Video
+    *Mobile
+    *Computing
+    *Cameras&Camcordes
+    *Kitchen applications
+    *Household items
+2. ОСНОВНАЯ ЧАСТЬ СТРАНИЦЫ (КОНТЕНТ)
+   2.1 Баннерная реклама (IPAD)
+   2.2 Графический контент (перечень товаров для заказа)
+3. ПОДВАЛ САЙТА
+   3.1 Рекламная ссылка
+   3.2 Дублированное меню
+    *Information
+    *My account
+    *Customer service
+   3.3 Ссылка на авторские права (Privacy Policy)
+4. ФОН САЙТА

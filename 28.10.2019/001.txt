@@ -1,0 +1,30 @@
+1. ШАПКА САЙТА
+   1.1 Главное меню
+    *Home
+    *About us
+    *Applications
+    *Technology
+    *Divisions
+    *Contacts
+   1.2 Логотип сайта
+   1.3 Строка поиска
+2. ОСНОВАНАЯ ЧАСТЬ СТРАНИЦЫ (КОНТЕНТ)
+   2.1 Баннерная реклама (слоган)
+   2.2 Текстовый контент
+    *Technologies
+    *Medicine
+    *Energy
+    *Genetics
+   2.3 Графический контент
+    *Featured event
+    *Latest news
+3. ПОДВАЛ САЙТА
+   3.1 Рекламный баннер
+   3.2 Контакты (Twitter Feed&Follow us)
+    *Twitter
+    *YouTube
+    *Facebook
+    *RssFeed
+   3.3 Обратная связь(Contact us)
+   3.4 Ссылка на авторские права(Privacy Policy)
+4. ФОН САЙТА

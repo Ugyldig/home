@@ -1,0 +1,26 @@
+1. ШАПКА САЙТА
+   1.1 Логотип и название сайта (Lotus&Landscape design)
+   1.2 Главное меню
+    *About us
+    *Events
+    *Plants
+    *Gallery
+    *Services
+    *Locations
+2. ОСНОВНАЯ ЧАСТЬ СТРАНИЦЫ (КОНТЕНТ)
+   2.1 Графический контент
+    *Creative solutions
+    *Basic principles
+    *Landscape planning
+    *Hillside watering
+   2.2 Текстовый контент
+    *Welcome
+    *Most popular information
+     -A
+     -B
+3. ПОДВАЛ САЙТА
+   3.1 Информация (о команде, для посетителей и.т.д.)
+   3.2 Latest projects
+   3.3 Второстепенное меню (Our services)
+   3.4 Ссылка на авторские права (Privacy Policy)
+4. ФОН САЙТА
