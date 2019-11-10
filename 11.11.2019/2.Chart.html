@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page</title>
+    <style>
+    .container{
+      display: column;
+      border: 2px hidden black;
+      background: white;
+      width: 400px;}
+
+    h1{
+        font-family:monospace;
+        padding: 8px;
+        font-size: normal;
+        margin: 10px;
+        padding: 8px;}
+
+    p{
+        font-family:serif;
+        font-size: medium;
+        color: black;
+        margin: 10px;
+        padding: 8px;
+        width: 400px;}
+
+    .text{
+        font-family: monospace;
+        border: hidden 1px gray;
+        background: lightgray;
+        margin: 5px;
+        padding: 4px;
+    }
+    .color1{
+        color: blue;
+    }
+    .color2{
+        color: red;
+    }
+    .example{
+        font-family: monospace;
+        border: hidden 1px gray;
+        background: lightgray;
+        margin: 10px;
+        padding: 8px;
+        width: 400px;}
+
+    .example2{
+        font-family: monospace;
+        border: hidden 1px gray;
+        background: lightgray;
+        margin: 10px;
+        padding: 8px;
+        width: 400px;
+        }
+    .example3{
+        font-family: monospace;
+        border: hidden 1px gray;
+        background: lightgray;
+        margin: 10px;
+        padding: 8px;
+        width: 400px;}
+    </style>
+</head>
+<body>
+<div class="container">
+ <h1>Creating a chart</h1>
+ <p>To create a chart, we need to instantiate the <span class="text">Chart</span> class.To do this, we need<br>
+ to pass in the 2nd context of where we want to draw the chart. Here's an<br>
+ example.</p>
+
+ <p class="example">&lsaquo;canvas<span class="color1">id=</span><span class="color2">"myChart"</span>
+ <span class="color1"> width=</span><span class="color2">"400"</span>
+ <span class="color1"> heiht=</span><span class="color2">"400"</span> &rsaquo;&lsaquo;/canvas&rsaquo;</p>
+ <br>
+
+ <p class="example2"><em style="gray">// Get the context of the canvas element we want to select</em><br>
+ <strong >var </strong>ctx = <span class="color1">document.</span> getElementById (<span class="color2">"MyChart"</span>)
+  .getContext(<span class="color2">"2d"</span>);<br>
+ <strong >var </strong>myNewChart = <strong>new Chart(ctx).PolarArea(data);<br></p>
+
+<p>We can also get the context of our canvas with JQuery. To do this,<br>
+we need to get the DOM node out of the JQuery collection and call the<br>
+<span class="text"> get Context("2d")</span> method on that.</p>
+
+<p class="example3">// Get the context with JQuery - using JQuery's get() method<br>
+ <strong >var</strong>ctx = $(<span class="color2">#MyChart</span>).get(<span class="color1">0</span>).getContext
+ (<span class="color2">"2d"</span>);<br>
+ <strong >var</strong> myNewChart = <strong>new</strong> Chart(ctx)<br></p>
+</div>
+</body>
+</html>
