@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Pencil_Variant2</title>
+<style>
+body{
+    margin:0;
+    width: 100%;
+    padding: 20px;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pencil{
+    float: left;
+    margin-top:15px;
+    margin-left:-10px;
+    width: 180px;
+    height: 50px;
+    background-image: linear-gradient(to bottom, #f2fa00 33%, #7e8217 33%, #7efa00 66%, #f2fa00 66%, #f2fa00 100%);
+}
+.middle{
+    float:left;
+    width: 0; 
+    height: 0;
+    margin-top: 15px;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 35px solid #8f3f03;
+    display: inline-block;
+
+}
+.spike{
+    float: left;
+    margin-top:33px; 
+    width: 0; 
+    height: 0;
+    margin-left: -10px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid black;
+    display: inline-block;
+}
+
+</style>
+<body>
+<div class="container">
+<div class="pencil"></div>
+<div class="middle"></div>
+<div class="spike"></div>
+</div>
+</body>
+</html>
