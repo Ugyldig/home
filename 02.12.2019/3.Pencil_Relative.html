@@ -1,0 +1,52 @@
+<html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Pencil_Relative</title>
+
+<style>
+body{
+    margin: 0;}
+
+.pencil {
+        top: 100px;
+        width: 40vw;
+        height: 10vw;
+        right: 30vw;
+        background: linear-gradient(violet 33%, black 33%, violet 66%, violet 66%, violet 100%);
+        }
+    .pencil::before {
+        position: relative;
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        left: 37.2vw;
+        top: -4.1vw;
+        border-top: 8vw solid transparent;
+        border-left: 15vw solid brown;
+        border-bottom: 8vw solid transparent;
+        border-radius: 35vw;
+    }
+    .pencil::after {
+        position: relative;
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        top: -15.9vw;
+        left: 45vw;
+        border-top: 4vw solid transparent;
+        border-left: 7vw solid black;
+        border-bottom: 4vw solid transparent;
+        border-radius: 35vw;
+    }
+
+</style>
+</body>
+    <div class="pencil"></div>
+ </div>
+</body>
+</html>
