@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chessfigure</title>
+</head>
+<style>
+body {
+     margin: 0;
+    }
+
+.queen {
+    height: 10vmin;
+    width: 10vmin;
+    outline: solid 3px;
+    background-image: url("images/chess.png");
+    background-size: 600% 200%;
+    background-position-x: 0%;
+    background-position-y: -5%;
+ 
+}
+.queen2 {
+    position: relative;
+    bottom: 10vmin;
+    height: 10vmin;
+    width: 10vmin;
+    outline: solid black 1px;
+    background-image: url("images/chess.png");
+    background-size: 600% 200%;
+    background-position-x: 0%;
+    background-position-y: 100%;
+}
+#chess1+div>label>span {
+    display: none;
+}
+#chess1+div>label>span#unchecked {
+    display: initial;
+}
+#chess1:checked+div>label>span#unchecked {
+    display: none;
+}
+#chess1:checked+div>label>span#checked {
+    display: initial;
+}
+</style>
+<body>
+<input type="checkbox" id="chess1">
+<div>
+<label for="chess1"><div class="queen"></div><span id="unchecked">
+<span id="checked"><div class="queen2"></div></span></label>
+</div>   
+</body>
