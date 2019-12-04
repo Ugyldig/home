@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ООО "Рога и копыта" - заготовка кожи и всего остального</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    header{
+        position: relative;
+        background-color: #fe6f5e;
+        width: 90vw;
+        height: 10vw;
+    }
+    header>div{
+        position: absolute;
+        background: #fbec5d;
+        text-align: center;
+        width: 15vw;
+        height: 3vw;
+        line-height: 3vw;
+        border-radius: 3px;
+        top: 1vw;
+        left: 1vw;}
+
+    header>ul>li{
+        position: absolute;
+        display: inline-block;
+        cursor: pointer;
+        top: 5vw;
+    }
+
+    ul {
+        list-style: none;
+    }
+      
+    header>ul>li:nth-child(3) {
+        left: 80vw;
+    }
+    header>ul>li:nth-child(2) {
+        left: 71vw;
+    }
+    header>ul>li:nth-child(1) {
+        left: 60vw;
+    }
+    
+    header>ul>li+li+li>ul {
+        display: none;}
+    
+    header>ul>li:nth-child(3):hover>ul {
+       display: block;
+       background-color: #bbcbce;
+       border-radius: 5px;
+    
+    }
+    header>ul>li:nth-child(3):hover>ul>li:hover {
+        text-decoration: underline;
+    }
+
+     aside {
+        position: absolute;
+        display: block;
+        width: 15vw;
+        height: 65vh;
+        background-repeat: repeat-y;
+        background-color: #fc709b;
+        float: left;
+        cursor: pointer;}
+        
+    aside>ul>li{
+        display: pointer;
+        cursor: pointer;
+    }
+
+    footer{
+        display: block;
+        position: absolute;
+        width: 90vw;
+        height: 10vw;
+        bottom: 0;
+        text-align: center;
+        background-color: #6dec66
+    }
+
+    input[type=checkbox] {
+        display: none;}
+    
+    #first:checked~aside>ul>li:nth-child(1) {
+        display: block;}
+
+    #first:checked~aside>ul>li>label[for=first] {
+        background: yellow;}
+    
+    #second:checked~aside>ul>li:nth-child(2) {
+        display: block;
+    }
+    #second:checked~aside>ul>li>label[for=second] {
+        background: yellow;
+    }
+    #third:checked~aside>ul>li:nth-child(3) {
+        display: block;
+    }
+    #third:checked~aside>ul>li>label[for=third] {
+        background: yellow;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>Logo</div>
+        <ul>
+            <li>О компании</li>
+            <li>Доставка</li>
+            <li>Вакансии
+                <ul>
+                    <li>Заготовщик кожи</li>
+                    <li>Заготовщик рогов</li>
+                    <li>Заготовщик копыт</li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <aside>
+        <div>Каталог</div>
+        <ul><input type="checkbox" id="first" name="a1">
+            <li>Рога
+                <ul>
+                    <li>Бараньи</li>
+                    <li>Оленьи</li>
+                </ul>
+            </li>
+            <input type="checkbox" id="second" name="a2">
+            <label for="second">
+            <li>Копыта
+                <ul>
+                    <li>Бараньи</li>
+                    <li>Оленьи</li>
+                    <li>Свиные</li>
+                </ul>
+            </li>
+            </li><input type="checkbox" id="third" name="a3">
+            <label for="third">
+            <li>Кожа
+                <ul>
+                    <li>Крокодила</li>
+                    <li>Чебурашки</li>
+                    <li>Старухи шапокляк</li>
+                </ul></li>
+        </ul>
+    </aside>
+    <main></main>
+    <footer>&copy; 2019</footer>
+</body>
+</html>
