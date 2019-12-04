@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Фотогалерея</title>
+    <style>
+    .slide {
+        display:none; 
+        position: absolute;
+    }
+    
+    #three:checked~#slider>.slide:nth-child(3),
+    #one:checked~#slider>.slide:nth-child(1), 
+    #two:checked~#slider>.slide:nth-child(2), 
+    #four:checked~#slider>.slide:nth-child(4), 
+    #five:checked~#slider>.slide:nth-child(5) {
+        display: block;
+    }
+    #three:checked~#slider>.pins>label[for=three], 
+    #one:checked~#slider>.pins>label[for=one],
+    #two:checked~#slider>.pins>label[for=two],
+     #four:checked~#slider>.pins>label[for=four],
+    #five:checked~#slider>.pins>label[for=five] {
+     
+        display: block;
+    }
+
+    .prevSlide::before {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        border-top: 5vw solid transparent;
+        border-right: 7vw solid red;
+        border-bottom: 7vw solid transparent;
+        left: 25vw;
+        top: 8vw;
+        
+    }
+    .prevSlide:hover::before {
+        border-top: 5vw solid transparent;
+        border-right: 7vw solid yellow;
+        border-bottom: 7vw solid transparent;
+       
+     }
+    .nextSlide::before {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        border-top: 5vw solid transparent;
+        border-left: 7vw solid red;
+        border-bottom: 7vw solid transparent;
+        left: 70vw;
+        top: 8vw;
+        
+    }
+    .nextSlide:hover::before {
+        border-top: 5vw solid transparent;
+        border-left: 7vw solid yellow;
+        border-bottom: 7vw solid transparent;
+        
+    }
+    input[type=radio] {
+        position: relative;
+        float: left;
+        left: 50vw;
+        display: block;
+        background-color: blue;
+        top: 39vw;
+    }
+    .slide>img {
+        position: absolute;
+        display: block;
+        width: 30vw;
+        left: 37vw;   
+        top: 0.1vw;}
+
+    </style>
+</head>
+
+<body>
+    <h1>добавить стили и расставить for и src так, чтобы работала фотогаллерея</h1>
+    <input type="radio" id="one" name="pic">
+    <input type="radio" id="two" name="pic">
+    <input type="radio" id="three" name="pic">
+    <input type="radio" id="four" name="pic">
+    <input type="radio" id="five" name="pic">
+    <div id="slider">
+        <section class="slide">
+            <img src="https://images.prod.meredith.com/product/cce582ef5531c03c00b5f03180da8df9/1565281097798/l/hakuna-matata-black-on-yellow-wall-tapestry-small-51-x-60-by-joyrecibe">
+            <label for="five" class="prevSlide"></label>
+            <label for="two" class="nextSlide"></label>
+        </section>
+        <section class="slide">
+            <img src="http://lichnyj-dnevnik.ru/wp-content/uploads/malenkie-risunki-dlja-srisovki-8.jpg">
+            <label for="one" class="prevSlide"></label>
+            <label for="three" class="nextSlide"></label>
+        </section>
+        <section class="slide">
+            <img src="https://ih1.redbubble.net/image.428332521.5060/pd,x400,macbook_air_13-bg,ffffff.jpg">
+            <label for="two" class="prevSlide"></label>
+            <label for="four" class="nextSlide"></label>
+        </section>
+        <section class="slide">
+            <img src="https://portal.ort.spb.ru/lib/Documents/Projects/2006/robotlandia06_2/pics/pentacl.gif">
+            <label for="three" class="prevSlide"></label>
+            <label for="five" class="nextSlide"></label>
+        </section>
+        <section class="slide">
+            <img src="https://u.yablyk.com/2016/12/ios-emoji-1.jpg">
+            <label for="four" class="prevSlide"></label>
+            <label for="one" class="nextSlide"></label>
+        </section>
+        <div class="pins">
+            <label for="one"></label>
+            <label for="two"></label>
+            <label for="three"></label>
+            <label for="four"></label>
+            <label for="five"></label>
+        </div>
+    </div>
+</body>
+
+</html>
