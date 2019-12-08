@@ -1,0 +1,99 @@
+body>*{
+max-width: 480px;}
+
+body, ul{
+        margin: 0;
+    }
+    header{
+        background-color: coral;
+        min-height: 120px;
+        min-width: 480px;
+    }
+    header>div{
+        background-color: lightsalmon;
+        height: 80px;
+        width: 200px;
+        top: 20px;
+        left: 20px;
+        position: absolute;
+    }
+    header>ul>li{
+        display: inline-block;
+        position: relative;
+    }
+    header>ul>li>ul{
+        display: none;
+        position: absolute;
+        list-style: none;
+    }
+    header>ul>:hover:nth-child(3)>ul{
+        display: block;
+    }
+    header>ul>li>ul>li{
+        min-width: 150px;
+        margin-left: -40px;
+    }
+    header>ul>li:last-child::after{
+        display: inline;
+        content:"\25bc";
+    }
+    header>ul{
+        position:absolute;
+        top: 5px;
+        left: 160px;
+    }
+    footer{
+        background-color: lightblue;
+        text-align: center;
+        min-width: 480px;
+        line-height: 120px;
+        min-height: 120px;
+        
+    }
+    main{
+        min-height: 480px;
+        border-left: 480px solid hotpink;
+        max-width: 480px;
+        display: block;
+    }
+    aside{
+        position: absolute;
+    }
+    aside li, 
+    aside label {
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    aside ul{
+        list-style: none;
+        padding: inline-start;
+    }
+    aside input{
+        display: none;
+    }
+   #kozha~ul, #roga~ul, #kopyta~ul{
+        display: none;
+    }
+   #kozha:checked~ul, #roga:checked~ul, #kopyta:checked~ul{
+    display: block;
+}
+ aside>ul>li>label::after{
+     content: "\25b6";
+     display: inline;
+     color: black;
+     position: absolute;
+     right: 60;
+}
+aside label{
+    display: block;
+}
+#roga~ul, #kozha~ul, #kopyta~ul{
+    left: 250px;
+    min-width:200px;
+    background-color: grey;
+    position: absolute;
+}
+aside>ul>li{
+    position: relative;
+}
