@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Разрешение</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    
+    @media screen (max-width: 400px){
+    .figure{
+        width: 0px;
+        height: 0px;
+        bottom: 10px;
+        left: 10px;
+        border-top: none;
+        background: blue;
+        border: 20px solid blue;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        transition: 3s;
+    }
+    }
+
+    @media screen and (min-width: 401px) and (max-width: 799px){
+
+    .figure{
+     width: 200px;
+	   height: 200px;
+	   background: black;
+     display: inline-block;
+     position: absolute;
+     bottom: 10px;
+     left: 50px;
+     transition: 3s;
+
+    }
+    }
+
+    @media screen and (max-width: 800px){
+    .figure{
+        background: red;
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: 10px;
+        left: 50px;
+        border-radius: 50%;
+        transition: 5s;
+    }
+    }
+    </style>
+ 
+</head>
+<body>
+<div class="figure"></div>
+</body>
+</html>
