@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smile</title>
+    <style>
+    body{
+        margin:0
+    }
+    .circle{
+        width: 200px;
+        height: 200px;
+        border: 10px solid black;
+        border-radius: 50%;
+        background: lightgray;
+    }
+    .smile{
+        width: 90px;
+        height: 90px;
+        border: 10px solid black;
+        position: absolute;
+        border-radius: 50%;
+        border-color: transparent transparent black black;
+        transform: rotate(-45deg);
+        left: 55px;
+        top: 70px;
+    }
+    .left{
+        width: 20px;
+        height: 20px;
+        border: 10px solid green;
+        position: absolute;
+        border-radius: 50%;
+        border-color: transparent transparent green green;
+        left: 50px;
+        top: 60px;
+        transform: rotate(135deg);
+
+    }
+    .right{
+        width: 20px;
+        height: 20px;
+        border: 10px solid red;
+        position: absolute;
+        border-radius: 50%;
+        border-color: transparent transparent red red;
+        left: 130px;
+        top: 60px;
+        transform: rotate(135deg);
+
+    }
+    .smile:before{
+        content "";
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        background-color: black;
+        border-color: 5px solid black;  
+    }
+    .smile:after{
+        content ""
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    .left:before{
+        content ""
+        display: block;
+        border-radius: 50%;
+        border: 5px solid black;
+    }
+    .left:after{
+        content ""
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        border: 5px solid black;
+
+    }
+    .right:before{
+        content ""
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+
+    }
+    .right:after{
+        content ""
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        top: 40%;
+        border: 2px solid black;
+    }
+
+
+    </style>
+</head>
+<body>
+<div class="circle"></div>
+<div class="smile"></div>
+<div class="left"></div>
+<div class="right"></div>
+</body>
+</html>
