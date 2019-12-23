@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Карандаш</title>
+    <style>
+    body{
+        margin: 0;
+    }
+
+    .pencil{
+	   height: 250px;
+	   position: relative;
+	   width: 60px;
+	   margin: 50px auto 0;
+       bottom: 15px;
+     }
+    .left,
+    .center, 
+    .right{
+	   display: inline-block;
+	   height: 300px;
+	   float: left;
+    }
+    .left, 
+    .right{
+	   width: 15px;
+	   position: relative;
+    }
+    .left{
+	   background: -webkit-linear-gradient(left, #ff0800, #000);
+    }
+    .right{
+	  background: -webkit-linear-gradient(left, #000, #ff0800);
+}
+    .center{
+	  width: 30px;
+	  background: #ff0800;
+	  position: relative;
+	  color: black;
+    }
+    .top{
+	  border-bottom: 60px solid salmon;
+	  border-left: 30px solid transparent;
+	  border-right: 30px solid transparent;
+      position: relative;
+    }
+    .top:before{
+	  content: "";
+	  display: block;
+	  position: absolute;
+	  left: -10px;
+	  border-bottom: 20px solid #000;
+	  border-left: 10px solid transparent;
+	  border-right: 10px solid transparent;
+     }
+    </style>
+    <body>
+    <div class="pencil">
+	<div class="top"></div>
+	<div class="left"></div>
+	<div class="center"></div>
+	<div class="right"></div>
+    </div>
+    </body>
+    </html>
